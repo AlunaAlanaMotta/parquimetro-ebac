@@ -78,14 +78,21 @@ h2 {
 
 
 @media screen and (max-width: 600px) {
-    table {
+    .table-container {
         width: 100%;
-        min-width: 350px; 
-        overflow-x: auto;
-        display: block;
-        white-space: nowrap; 
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        overflow-x: auto; /* Permite rolagem horizontal */
     }
-    
+
+    table {
+        width: auto; /* Evita que a tabela fique esticada */
+        min-width: 350px; 
+        white-space: nowrap; /* Mantém o texto em uma linha */
+        border-collapse: collapse;
+        margin: 0 auto; /* Centraliza a tabela */
+    }
+
     th, td {
         padding: 10px;
         text-align: center;
@@ -102,12 +109,6 @@ h2 {
 
     tbody tr:hover {
         background-color: #d1f7d1;
-    }
-
-
-    .table-container {
-        width: 100%;
-        overflow-x: auto;
     }
 }
 

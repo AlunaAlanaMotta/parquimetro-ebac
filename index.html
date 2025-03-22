@@ -9,28 +9,22 @@
 <body>
 
     <h2>Tabela de Tarifas</h2>
-    <table id="tabela-tarifas">
-        <thead>
-            <tr>
-                <th>Valor (R$)</th>
-                <th>Tempo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1,00</td>
-                <td>30 minutos</td>
-            </tr>
-            <tr>
-                <td>1,75</td>
-                <td>60 minutos</td>
-            </tr>
-            <tr>
-                <td>3,00</td>
-                <td>120 minutos (Tempo Máximo)</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Valor (R$)</th>
+                    <th>Tempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1,00</td><td>30 minutos</td></tr>
+                <tr><td>1,75</td><td>60 minutos</td></tr>
+                <tr><td>3,00</td><td>120 minutos (Tempo Máximo)</td></tr>
+            </tbody>
+        </table>
+    </div>
+    
 
     <label for="valor">Insira o valor (R$):</label>
     <input type="number" id="valor" step="0.01">
